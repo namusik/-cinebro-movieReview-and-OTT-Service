@@ -8,13 +8,11 @@
 	<a href="<%=imsi%>hello">헬로우</a>
 	<br><br><br>
 	<a href="<%=imsi%>world">월드</a>
+
 	아아
 	ajdskfjaksdf
-<<<<<<< Updated upstream
-=======
 	병모수정
 	우식 sub에서 수정했는데 push는 우식branch에
 
->>>>>>> Stashed changes
 </body>
 </html>
