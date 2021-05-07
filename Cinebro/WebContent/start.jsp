@@ -12,6 +12,7 @@
 	아아
 	ajdskfjaksdf
 	병모수정
+	우식 sub에서 수정했는데 push는 우식branch에
 
 </body>
 </html>
