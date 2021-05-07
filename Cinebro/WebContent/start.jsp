@@ -12,6 +12,6 @@
 	아아
 	ajdskfjaksdf
 	병모수정
-	ㄴㅇㄹㄴㅇㄹㄴㅇㄹㄴㅇㄹ
+
 </body>
 </html>
