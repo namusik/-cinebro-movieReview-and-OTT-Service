@@ -13,10 +13,15 @@ public class InsertFilmController extends SuperClass {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		super.doGet(request, response);
+		
+		String gotopage = "/profile/InsertFilmForm.jsp" ;
+		super.GotoPage(gotopage);
 	}
 
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		super.doPost(request, response);
+		
+		dao.insertFilm(bean);
 	}	
 }

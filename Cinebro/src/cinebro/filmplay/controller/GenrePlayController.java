@@ -13,6 +13,10 @@ public class GenrePlayController extends SuperClass {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		super.doGet(request, response);
+		
+		dao.selectByRecommend(String genre);
+		dao.selectWatched(String genre);
+		doa.selectByWish(String genre);
 	}
 
 	@Override
