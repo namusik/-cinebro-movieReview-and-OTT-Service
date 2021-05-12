@@ -18,15 +18,16 @@ public class ReviewListController extends SuperClass {
 	@Override
 	public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		super.doGet(request, response);
-		FilmDetailDao dao1 = new FilmDetailDao();
-		List<Film> popularFilms = dao1.selectPopularFilm();
-		request.setAttribute("popularFilm", popularFilms);
+
+		ReviewDao dao = new ReviewDao();
+		List<Review> popularReviews = dao.selectPopularReview();
 		
+		request.setAttribute("reviewlists", popularReviews);
 		
-		ReviewDao dao2 = new ReviewDao();
-		List<Review> reviewLists = dao2.selectPopularReview();
+		System.out.println("이동직전");
 		
-		request.setAttribute("reviewlists", reviewLists);
+		String gotopage = "/reviews/reviewList.jsp" ;
+		super.GotoPage(gotopage);
 	}
 
 	@Override
